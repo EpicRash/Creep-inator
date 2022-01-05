@@ -22,34 +22,6 @@ def getkey(keyName):
     return ans
 
 
-def getKeyboardInput():
-    lr, fb, ud, yv = 0, 0, 0, 0
-    speed = 50
-
-    if kp.getkey("LEFT"):
-        lr = -speed
-    elif kp.getkey("RIGHT"):
-        lr = speed
-
-    if kp.getkey("UP"):
-        fb = speed
-    elif kp.getkey("DOWN"):
-        fb = -speed
-
-    if kp.getkey("w"):
-        ud = speed
-    elif kp.getkey("s"):
-        ud = -speed
-
-    if kp.getkey("a"):
-        yv = speed
-    elif kp.getkey("d"):
-        yv = -speed
-
-        if kp.getkey("PgUp"): me.takeoff()
-        if kp.getkey("PgDn"): me.land()
-
-    return [lr, fb, ud, yv]
 
 
 
