@@ -31,6 +31,9 @@ def getKeyboardInput():
     if kp.getkey("w"): ud = speed
     elif kp.getkey("s"): ud = -speed
 
+    if kp.getkey("a"): yv = speed
+    elif kp.getkey("d"): yv = -speed
+
 
 def main():
     print(getkey("a"))
