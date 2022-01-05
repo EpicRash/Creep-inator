@@ -21,9 +21,14 @@ def getkey(keyName):
 
     return ans
 
+
+def main():
+    print(getkey("a"))
+
 if __name__ == '__main__':
     init()
-
+    while True:
+        main()
 
 
 
