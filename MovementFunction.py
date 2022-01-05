@@ -2,10 +2,6 @@ from djitellopy import tello
 import pygame
 from time import sleep
 
-me = tello.Tello
-me.connect()
-print(me.getbattery())
-
 def init():
     pygame.init()
     win=pygame.display.set_mode((400,400))
