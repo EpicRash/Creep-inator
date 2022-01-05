@@ -1,5 +1,5 @@
 from djitellopy import tello
-import cv2
+from time import sleep
 
 me = tello.Tello
 me.connect()
