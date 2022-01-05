@@ -18,6 +18,16 @@ def getkey(keyName):
     return ans
 
 
+def getKeyboardInput():
+    lr, fb, up, yv = 0,0,0,0
+    speed = 50
+
+    if kp.getkey("LEFT"): lr = -speed
+    elif kp.getkey("RIGHT"): lr = speed
+    elif kp.getkey("UP"): up = speed
+    elif kp.getkey("DOWN"): up = -speed
+
+
 def main():
     print(getkey("a"))
 
